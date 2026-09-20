@@ -273,7 +273,7 @@ footer{margin:36px 0 44px;color:var(--faint);font-size:13px;border-top:1px solid
   }
   var saved = null;
   try { saved = localStorage.getItem('hxclang'); } catch(e){}
-  setLang(saved ? saved === 'en' : false);
+  setLang(saved ? saved === 'en' : true);
   btn.addEventListener('click', function(){
     setLang(!document.body.classList.contains('en'));
   });
